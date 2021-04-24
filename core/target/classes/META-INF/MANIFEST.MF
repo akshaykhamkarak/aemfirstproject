@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1619019085057
+Bundle-Category: firstproject
+Bundle-Description: "Core bundle for firstproject"
+Bundle-ManifestVersion: 2
+Bundle-Name: firstproject - Core
+Bundle-SymbolicName: firstprojec.core
+Bundle-Version: 1.0.0.20210421153125056
+Created-By: 11.0.10 (Oracle Corporation)
+Export-Package: com.aem.firstproject.core.filters;version="1.0";uses:=
+ "javax.servlet",com.aem.firstproject.core.listeners;version="1.0";use
+ s:="org.osgi.service.event",com.aem.firstproject.core.models;version=
+ "1.0";uses:="javax.annotation,org.apache.sling.api.resource,org.apach
+ e.sling.models.annotations,org.apache.sling.models.annotations.inject
+ orspecific",com.aem.firstproject.core.schedulers;version="1.0",com.ae
+ m.firstproject.core.servlets;version="1.0";uses:="javax.servlet,org.a
+ pache.sling.api,org.apache.sling.api.servlets"
+Import-Package: com.aem.firstproject.core.filters;version="[1.0,2)",co
+ m.aem.firstproject.core.listeners;version="[1.0,2)",com.aem.firstproj
+ ect.core.schedulers;version="[1.0,2)",com.aem.firstproject.core.servl
+ ets;version="[1.0,2)",com.day.cq.wcm.api;version="[1.27,2)",javax.ann
+ otation;version="[1.3,2)",javax.servlet;version="[3.1,4)",org.apache.
+ sling.api;version="[2.3,3)",org.apache.sling.api.request;version="[2.
+ 4,3)",org.apache.sling.api.resource;version="[2.11,3)",org.apache.sli
+ ng.api.servlets;version="[2.2,3)",org.apache.sling.models.annotations
+ ;version="[1.5,2)",org.apache.sling.models.annotations.injectorspecif
+ ic;version="[1.1,2)",org.apache.sling.settings;version="[1.3,2)",org.
+ osgi.service.event;version="[1.3,2)",org.slf4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ,osgi.service;objectClass:List<String>="javax.servlet.Servlet",osgi.s
+ ervice;objectClass:List<String>="org.osgi.service.event.EventHandler"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.aem.firstproject.core.filters.LoggingF
+ ilter.xml,OSGI-INF/com.aem.firstproject.core.listeners.SimpleResource
+ Listener.xml,OSGI-INF/com.aem.firstproject.core.schedulers.SimpleSche
+ duledTask.xml,OSGI-INF/com.aem.firstproject.core.servlets.SimpleServl
+ et.xml
+Sling-Model-Packages: com.aem.firstproject.core.models
+Tool: Bnd-4.2.0.201903051501
+

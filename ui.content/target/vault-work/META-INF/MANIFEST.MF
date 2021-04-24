@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven
+Built-By: DELL
+Build-Jdk: 11.0.10
+Implementation-Title: firstproject - UI content
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.aem.firstproject
+Content-Package-Roots: /conf/firstproject,/content/dam/firstproject,/con
+ tent/firstproject
+Content-Package-Description: UI content package for firstproject
+Content-Package-Id: firstproject:firstprojec.ui.content:1.0-SNAPSHOT
+Content-Package-Type: content
+

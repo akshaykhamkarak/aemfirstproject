@@ -1,0 +1,5 @@
+com\aem\firstproject\core\listeners\SimpleResourceListenerTest.class
+com\aem\firstproject\core\filters\LoggingFilterTest.class
+com\aem\firstproject\core\models\HelloWorldModelTest.class
+com\aem\firstproject\core\schedulers\SimpleScheduledTaskTest.class
+com\aem\firstproject\core\servlets\SimpleServletTest.class
