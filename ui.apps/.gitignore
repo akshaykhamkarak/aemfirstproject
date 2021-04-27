@@ -2,3 +2,4 @@
 
 src/main/content/jcr_root/apps/firstproject/clientlibs/clientlib-site
 src/main/content/jcr_root/apps/firstproject/clientlibs/clientlib-dependencies
+/target/
